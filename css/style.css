@@ -6,13 +6,16 @@
 
 main {
     height: calc(100vh - 80px);
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     /* debug */
     background-color: black;
 }
+
+
 
 #centratura-webcam {
     display: flex;
@@ -20,6 +23,27 @@ main {
     width: 80%;
     height: 80%;
 }
+
+.cambio-schermata {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.cambio-schermata i {
+    color: grey;
+    text-align: center;
+    font-size: 50px;
+}
+.destro {
+    order: 1;
+}
+
+.cambio-schermata.destro i {
+    color: #2ebaff;
+}
+
 
 #speacker-view {
     display: flex;
@@ -71,7 +95,10 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     padding: 2px 3px;
+    max-height: 22px;
+    overflow: hidden;
 }
+
 /* /gestione immagine */
 
 footer {
