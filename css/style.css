@@ -99,27 +99,82 @@ main {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    .col:nth-child(5) {
+        display: none;
+        /* position: absolute; */
+    }
+  }
 /* /gestione immagine */
 
+
+/* footer */
 footer {
     height: 80px;
     background-color:#212325;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.text-footer {
+    color: white;
+    font-weight: bold;
+}
+/* nav sx */
 #nav-sx {
-    background-color: red;
+/*     background-color: red; */
+    display: flex;
+    text-align: center;
+    margin-left: 5px;
     /* debug */
-    width: 200px;
-    height: 50px;
+   /*  width: 200px; */
 }
 
+.container {
+   /*  width: 50px; */
+/*     position: relative; */
+    margin-left: 7px;
+}
+
+.icon {
+    color: white;
+    font-size: 35px;
+}
+
+#nav-sx .container > i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow  i {
+/*     position: absolute;
+    top: 0;
+    right: 0; */
+    padding: 7px;
+    color: white;
+}
+
+/* /nav sx */
 #nav-center {
-    background-color: red;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+   /*  background-color: red; */
     /* debug */
-    width: 400px;
-    height: 50px;
+/*     width: 400px;
+    height: 50px; */
+}
+
+#nav-center .container {
+    padding: 0 15px;
 }
 
 #end-meeting {
@@ -128,3 +183,5 @@ footer {
     width: 100px;
     height: 50px;
 }
+
+/* /footer */
