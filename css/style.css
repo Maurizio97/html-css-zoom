@@ -103,7 +103,28 @@ main {
 
 footer {
     height: 80px;
+    background-color:#212325;
+    display: flex;
+    justify-content: space-between;
+}
 
+#nav-sx {
+    background-color: red;
     /* debug */
-    background-color: coral;
+    width: 200px;
+    height: 50px;
+}
+
+#nav-center {
+    background-color: red;
+    /* debug */
+    width: 400px;
+    height: 50px;
+}
+
+#end-meeting {
+    background-color: red;
+    /* debug */
+    width: 100px;
+    height: 50px;
 }
