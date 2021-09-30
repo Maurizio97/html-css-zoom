@@ -4,3 +4,79 @@
     box-sizing: border-box;
 }
 
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* debug */
+    background-color: black;
+}
+
+#centratura-webcam {
+    display: flex;
+    /* debug */
+    width: 80%;
+    height: 80%;
+}
+
+#speacker-view {
+    display: flex;
+    
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+
+#speacker-view div {
+    color: white;
+    margin: 0 7px;
+    background-color: #373737;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.col {
+  /*   display: flex; */
+ /*    flex-direction: column; */
+    /* debug */
+    width: calc(100% / 5);
+/*     height: 80vh; */
+   /*  background-color: cornflowerblue;
+    border: solid 1px black; */
+}
+
+.webcam {
+/*     display: flex; */
+    width: 100%;
+    height: calc(100% / 5);
+    position: relative;
+    padding: 3px;
+}
+
+/* gestione immagine */
+.webcam img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nome-partecipante {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 2px 3px;
+}
+/* /gestione immagine */
+
+footer {
+    height: 80px;
+
+    /* debug */
+    background-color: coral;
+}
